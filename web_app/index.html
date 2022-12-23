@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Smart Pet Monitor</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-database.js"></script>
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" ></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+      emailjs.init("QB8DxBxQFHVazdYlg");
+    })();
+</script> 
+  </head>
+  <body>
+    <h1>Smart Pet Monitor</h1>
+
+    <p>
+      Image taken of your pet at <span id="time"></span>: <br>
+      <img id="photo" />
+    </p>
+    <p>
+      Please find a link to a live stream below: <br> <a href="http://192.168.8.116:8000/stream.mjpg"> Smart Pet Monitor Live View</a> 
+    </p>
+        <p>
+      Use the Blynk App to open the Puppy crate, if required</a> 
+    </p>
+
+
+  </body>
+</html>
